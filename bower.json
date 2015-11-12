@@ -1,0 +1,13 @@
+{
+  "name": "test-express-mvc",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular-chart.js": "~0.8.5",
+    "angular-socket-io": "~0.7.0"
+  }
+}

@@ -1,0 +1,18 @@
+doctype html
+html(ng-app='demoApp', ng-cloack, lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    block css
+      link(rel='stylesheet', href='/css/style.css')
+      link(rel="stylesheet", href="/components/angular-chart.js/dist/angular-chart.css")
+    block js
+      if ENV_DEVELOPMENT
+        script(src='http://localhost:35729/livereload.js')
+  body(ng-controller='TitleController')
+    script(src='/components/angular/angular.js')
+    script(src='/components/Chart.js/Chart.js')
+    script(src='/components/angular-chart.js/dist/angular-chart.js')
+    script(src='/js/app/demo.js')
+    block content
