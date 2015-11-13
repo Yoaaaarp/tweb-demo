@@ -32,6 +32,11 @@ io.on('connection', function(socket){
     data[indice]++;
     console.log(indice + " " + data[indice]);
     io.emit('poll', data);
-  })
+  });
+
+  socket.on('reset', function(){
+    data = [0,0,0];
+    io.emit('poll',data);
+  });
 });
 

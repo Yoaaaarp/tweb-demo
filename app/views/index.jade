@@ -10,3 +10,5 @@ block content
       button(ng-click='sendChoice(2)') {{ labels[2] }}
     div
       canvas#doughnut.chart.chart-doughnut(chart-data='data', chart-labels='labels')
+    div
+      button(ng-click='reset()') {{ resetText }}
