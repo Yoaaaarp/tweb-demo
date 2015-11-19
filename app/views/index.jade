@@ -1,13 +1,6 @@
 extends layout
 
 block content
-  h1 {{title}}
-
-  div(ng-controller='ChartController')
-    a(ui-sref='poll') Poll
-    br
-    a(ui-sref='chart') Chart
-    br
-    a(ui-sref='debug') Debug
-
-    div(ui-view)
+  div
+    h1 {{title}}
+  div(ng-controller='ChartController' ui-view)

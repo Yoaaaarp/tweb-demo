@@ -9,6 +9,7 @@
   "dependencies": {
     "angular-chart.js": "~0.8.5",
     "angular-socket-io": "~0.7.0",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "jade-bootstrap": "*"
   }
 }
