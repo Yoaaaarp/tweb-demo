@@ -31,6 +31,7 @@
   });
 
   appModule.controller('ChartController', function ($scope, mySocket){
+    $scope.questionText = 'Do you like cats ?';
     $scope.labels = ['Yes', 'No', 'Dunno'];
     $scope.resetText = 'Reset';
     $scope.data;

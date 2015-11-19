@@ -1,3 +1,11 @@
 // Created by David on 19.11.2015.
 
-button(ng-click='reset()') {{ resetText }}
+h1 {{ questionText }}
+div
+  button(ng-click='sendChoice(0)') {{ labels[0] }}
+  button(ng-click='sendChoice(1)') {{ labels[1] }}
+  button(ng-click='sendChoice(2)') {{ labels[2] }}
+div
+  canvas#doughnut.chart.chart-doughnut(chart-data='data', chart-labels='labels')
+div
+  button(ng-click='reset()') {{ resetText }}
