@@ -8,8 +8,8 @@ var config = {
     app: {
       name: 'test-express-mvc'
     },
-    port: 3000,
-    db: 'mongodb://localhost/test-express-mvc-development'
+    port: process.env.PORT || 3000,
+    db: process.env.MONGOLAB_URI || 'mongodb://localhost/test-express-mvc-development'
   },
 
   test: {
@@ -17,8 +17,8 @@ var config = {
     app: {
       name: 'test-express-mvc'
     },
-    port: 3000,
-    db: 'mongodb://localhost/test-express-mvc-test'
+    port: process.env.PORT || 3000,
+    db: process.env.MONGOLAB_URI || 'mongodb://localhost/test-express-mvc-test'
   },
 
   production: {
@@ -26,8 +26,8 @@ var config = {
     app: {
       name: 'test-express-mvc'
     },
-    port: 3000,
-    db: 'mongodb://localhost/test-express-mvc-production'
+    port: process.env.PORT || 3000,
+    db: process.env.MONGOLAB_URI || 'mongodb://localhost/test-express-mvc-production'
   }
 };
 
