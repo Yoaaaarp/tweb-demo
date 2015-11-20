@@ -3,4 +3,13 @@ extends layout
 block content
   div
     h1 {{title}}
+  div
+    ul.nav.nav-pills
+      li(ui-sref-active='active', role='presentation')
+        a(ui-sref='poll') Poll
+      li(ui-sref-active='active', role='presentation')
+        a(ui-sref='chart') Chart
+      li(ui-sref-active='active', role='presentation')
+        a(ui-sref='debug') Debug
   div(ng-controller='ChartController' ui-view)
+

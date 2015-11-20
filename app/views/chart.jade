@@ -1,13 +1,8 @@
 // Created by David on 19.11.2015.
-div
-  ul.nav.nav-pills
-    li(role='presentation')
-      a(ui-sref='poll') Poll
-    li.active(role='presentation')
-      a(ui-sref='chart') Chart
-    li(role='presentation')
-      a(ui-sref='debug') Debug
-div
-  canvas#doughnut.chart.chart-doughnut(chart-data='data', chart-labels='labels')
-  canvas#doughnut.chart.chart-pie(chart-data='data', chart-labels='labels')
+
+div.container
+  div.col-md-6
+    canvas#doughnut.chart.chart-doughnut(chart-data='data', chart-labels='labels')
+  div.col-md-6
+    canvas#doughnut.chart.chart-pie(chart-data='data', chart-labels='labels')
 

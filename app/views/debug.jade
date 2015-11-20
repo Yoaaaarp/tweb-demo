@@ -1,18 +1,9 @@
 // Created by David on 19.11.2015.
-div
-  ul.nav.nav-pills
-    li(role='presentation')
-      a(ui-sref='poll') Poll
-    li(role='presentation')
-      a(ui-sref='chart') Chart
-    li.active(role='presentation')
-      a(ui-sref='debug') Debug
+
 div
   h1 {{ questionText }}
 div
-  button.btn.btn-primary(ng-click='sendChoice(0)') {{ labels[0] }}
-  button.btn.btn-info(ng-click='sendChoice(1)') {{ labels[1] }}
-  button.btn.btn-success(ng-click='sendChoice(2)') {{ labels[2] }}
+  button.btn.btn-primary(ng-repeat='label in labels track by $index', ng-click='sendChoice($index)') {{ label }}
   button.btn.btn-warning(ng-click='reset()') {{ resetText }}
 div
   canvas#doughnut.chart.chart-doughnut(chart-data='data', chart-labels='labels')
